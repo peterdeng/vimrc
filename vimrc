@@ -131,8 +131,6 @@ map <F4> :s/^/\/\//<CR><Esc>:nohlsearch<CR>
 map <F3> :s/^\(.*\)$/\/\*\1\*\//<CR><Esc>:nohlsearch<CR>
 map <S-F3> :s/^\([	 ]*\)\/\*\(.*\)\*\/\([	 ]*\)$/\1\2\3/<CR><Esc>:nohlsearch<CR>
 map <S-F4> :s/^\([	 ]*\)\/\//\1/<CR><Esc>:nohlsearch<CR>
-map <F5> :s/^\([<Tab> ]*\)/\1\r\1/g<CR>k<S-A><C-R>="/* >>> mod by Peter " . strpart(strftime("%c") , 0 , 10) . " */"<CR><Esc>0<Esc>:nohlsearch<CR>
-map <S-F5> :s/^\([<Tab> ]*\)\(.*\)$/\1\2\r\1/g<CR><S-a><C-R>="/* <<< mod by Peter " . strpart(strftime("%c") , 0 , 10) . " */"<CR><Esc>0<Esc>:nohlsearch<CR>
 
 "use dictionary
 "The words file is usually stored in /usr/share/dict/words, or /usr/dict/words. On the Mac OS X system, the file path is /usr/share/dict/words.
